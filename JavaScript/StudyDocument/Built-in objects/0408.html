@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Math.random()</title>
+</head>
+<body>
+   <script>
+       function wrapedRandom(n, m) {
+           return Math.floor(Math.random()* (m - n + 1) + n);
+       }
+       
+       var arr = []
+       for (var i = 0; i < 10; i ++) {
+           arr.push(wrapedRandom(0, 100))
+       }
+       document.write(arr + "<br/>")
+       arr.sort(function(a, b) {return a - b})
+       document.write("这组数中最大的值是: " + arr[arr.length - 1] + ",最小的值是: " + arr[0])
+
+       
+   </script> 
+</body>
+</html>

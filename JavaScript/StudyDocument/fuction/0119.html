@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>avarage</title>
+</head>
+<body>
+    <script>
+        function avarage() {
+            var sum = 0;
+            for (var i in arguments) {
+                sum += arguments[i] 
+            }
+            return parseInt(sum / arguments.length);
+        }
+
+        var res = avarage(10, 20, 30);
+        console.log(res);
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>error</title>
+</head>
+<body>
+    <script>
+        function getUserInput(msg) {
+            var input = prompt(msg);
+            var parsed = parseInt(input);
+            if (parsed != parsed) { //判断parsed是否为NaN, 就是看自己是否与自己相对，因为我们知道NaN自己与自己是不想等的
+                return input
+            } else {
+                return parsed;
+            }
+
+            function multiple(a, b) {
+                if (typeof(a) != 'number' || typeof(b) != 'number') {
+                    throw new Error("arguments should all be number")
+                }
+
+                return a * b
+            }
+
+            var c
+            var a = getUserInput("请输入一个数")
+            var b = getUserInput("请再输入一个数")
+            try {
+                c = multiple(a, b)
+                alert("他们的乘积是" + c)
+            } catch(error) {
+                alert("请再输入两个数字")
+            } finally {
+                //做一些清理工作
+            }
+        }
+    </script> 
+</body>
+</html>

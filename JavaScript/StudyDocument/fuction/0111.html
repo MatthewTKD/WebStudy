@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>0111</title>
+</head>
+<body>
+    <script>
+
+        var input = prompt("请输入您的密码");
+        function isSecrecCode(input) {
+            if (input.length >= 6 && input.length <= 12) {
+                alert("密码格式正确");
+            } else if (input.length < 6) {
+                alert("密码不能小于6位数");
+            } else {
+                alert("密码不能大于12位数");
+            }
+        }
+        isSecrecCode(input);
+    </script> 
+</body>
+</html>

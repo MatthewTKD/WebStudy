@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>func</title>
+</head>
+<body>
+    <script>
+        // function add(a, b) {
+        //     return a + b
+        // }
+
+        // function noarg() {
+        //     console.log(arguments[0])
+        //     console.log(arguments[1])
+        //     console.log(arguments[0] + arguments[1])
+        // }
+        // noarg(3, 4)
+
+        // function avarage() {
+        //     var str = "abc"
+        //     for (var i in str) {
+        //         console.log(i)
+        //     }
+        // }
+        // avarage()
+
+        var str = "abc"
+        for (var i in str) {
+            console.log(str[i])
+        }
+
+        // 匿名函数
+        var output = function(){
+            console.log("我是匿名函数")
+        }
+        output() //调用
+        // 传参
+        var output2 = function(str) {
+            console.log(str)
+        }
+        output2("是不是很酷")
+
+        //全局变量
+        function aaa(){
+            num2 = 16;
+        }
+        aaa()
+        console.log(num2)
+        // 块级作用域
+        if (3 < 5) {
+            var wh = 12
+        }
+        console.log(wh)
+
+        // 作用域链
+        var num = 10
+        function fu1() {
+            num = 20
+            function fu2() {
+                console.log(num)
+            }
+            fu2()
+        }
+        fu1()
+
+    </script>
+</body>
+</html>

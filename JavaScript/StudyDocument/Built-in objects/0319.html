@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>解析邮箱</title>
+</head>
+<body>
+    <script>
+        var mail = prompt("请输入登陆邮箱");
+        var userName = mail.slice(0, mail.indexOf('@'))
+        var domainName = mail.slice(mail.lastIndexOf('@') + 1)
+
+        document.write("邮箱的用户名是: " + userName + "<br/>");
+        document.write("登陆的邮箱域名是: " + domainName)
+    </script> 
+</body>
+</html>

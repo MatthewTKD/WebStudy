@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>0222</title>
+</head>
+<body>
+    <script>
+        var num = []
+        while (input != -1) {
+            var input = prompt("输入数字")
+            num.push(input)
+        }
+        num.pop()
+        num.sort(function(a, b){return b - a})
+        for (var i in num) {
+            document.write(num[i] + " ")
+        }
+    </script> 
+</body>
+</html>

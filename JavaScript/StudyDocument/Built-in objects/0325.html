@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>转换手机号码前7位</title>
+</head>
+<body>
+    <script>
+        var phoneNumber = prompt("请输入手机号码")
+        for (var i = 0; i < 7;i ++) {
+            phoneNumber = phoneNumber.replace(phoneNumber.charAt(i), '*')
+        }
+        document.write(phoneNumber)
+    </script> 
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>手机号码验证</title>
+</head>
+<body>
+    <script>
+        //补充代码
+        var phoneNum = prompt("请输入手机号码");
+        if (parseInt(phoneNum).length == 11) {
+            if (typeof (parseInt(phoneNum)) == "number") {
+                alert("号码输入正确");
+            } else {
+                alert("11位号码必须是数字");
+            }
+        } else {
+            alert("必须输入11位手机号码");
+        }
+    </script>
+</body>
+</html>

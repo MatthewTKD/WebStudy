@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>object</title>
+</head>
+<body>
+    <script>
+        // 对象第一种创建方式
+        var obj = {
+            // 属性
+            name: "Matthew",
+            age: 20,
+            sex: "male",
+
+            // 方法
+            sayHi: function() {
+                console.log("Hi");
+            }
+        }
+        
+        console.log(obj.name)
+        obj.sayHi()
+        console.log(obj["name"])
+
+        // 对象第二种创建方式，使用new Object
+        var obj2 = new Object();
+        obj2.name = "Bo";
+        obj2.age = 20;
+        obj2.sayHi = function() {
+            console.log("hi~");
+        }
+        obj2.year = 3
+
+        console.log(obj2.year)
+        
+
+        // 构造函数
+        function People(name, age, sex) {
+            this.name = name;
+            this.age = age;
+            this.sex = sex;
+            this.sing = function(song) {
+                    console.log(song);
+            }
+        }
+
+        var alice = new People("Alice", 18, "female")
+        console.log(typeof(alice))
+        console.log(alice.name)
+        alice.sing("Haliluya")
+
+        for (var key in alice) {
+            console.log(key + " " + alice[key])
+        }
+
+    </script> 
+</body>
+</html>

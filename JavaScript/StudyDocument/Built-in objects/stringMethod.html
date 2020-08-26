@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>stringMethod</title>
+</head>
+<body>
+    <script>
+        var str = "abcdef"
+        // console.log(str.charAt(1))
+        // console.log(str.charCodeAt(1))
+        // console.log(str.indexOf('b'))
+        // console.log(str.lastIndexOf('d')) 
+        // var str="Work hard, earn money."
+        // var strKey= str.indexOf('a');//补充代码
+        // document.write(str.charCodeAt(strKey));//补充代码
+        var ret = "abcdac"
+        console.log(ret.lastIndexOf('c'))
+
+        // split()
+        var date = "2016/05/05"
+        var arr = date.split('/')
+        console.log(arr)
+
+        // replace()
+        var tel = "010-001003, 020-003441, 030-001001"
+        var newTel = tel.replace(',', ' ');
+        console.log(newTel)
+        
+        // toUpperCase()
+        var str = "hello"
+        console.log(str.toUpperCase()) 
+    </script> 
+</body>
+</html>
